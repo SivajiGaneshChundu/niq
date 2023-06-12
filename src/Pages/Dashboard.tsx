@@ -110,7 +110,7 @@ export default function Dashboard() {
                           id="categories-select"
                           value={selectedCategory}
                           label="Category"
-                          onChange={(e) => setSelectedCategory(e.target?.value)}
+                          onChange={(e) => { setSelectedCategory(e.target?.value); setSelectedProduct(null); }}
                         >
                           {categoriesData?.map((d: string, i: number) => (
                             <MenuItem key={i} value={d}>
