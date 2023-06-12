@@ -24,7 +24,14 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### `Deployment` 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This application is being deployed using `GitHub Pages`. Please run the below two commands inorder deploy the project
+
+### `npm run predeploy`
+
+The predeploy script is used to bundle the React application. It will just run the `npm run build` command.
+
+### `npm run deploy`
+
+The deploy script deploys the bundled file.
